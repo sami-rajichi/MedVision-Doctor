@@ -1,0 +1,35 @@
+[project]
+name = "MiniGPT-Med"
+version = "0.1.0"
+description = "Medical image analysis reporter with MiniGPT-Med, Gemma, and Gradio UI"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "pillow==10.1.0",
+    "pydantic==2.5.2",
+    "requests==2.31.0", # Keep for potential future use or internal checks
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "transformers>=4.52.1",
+    "python-dotenv>=1.0.0", # To load .env file
+    "fastapi==0.104.1",
+    "uvicorn==0.24.0",
+    "jinja2==3.1.2",
+    "aiohttp==3.9.1",
+    "torchvision==0.22.0",
+    "python-multipart>=0.0.6",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128" },
+]
+torchvision = [
+  { index = "pytorch-cu128" },
+]
