@@ -3,7 +3,7 @@
 
 ## Overview
 
-MedVision Doctor (Check [![YouTube Demo]](https://youtu.be/dKqDJafCNqA)) is a medical imaging analysis system that generates diagnostic reports from medical images. This exploratory tentative features:
+MedVision Doctor (Check [YouTube Demo](https://youtu.be/dKqDJafCNqA)) is a medical imaging analysis system that generates diagnostic reports from medical images. This exploratory tentative features:
 
 - **FastAPI backend**: Robust API server for image processing and report generation
 - **Modern frontend**: Clean HTML/JS interface for user interaction
