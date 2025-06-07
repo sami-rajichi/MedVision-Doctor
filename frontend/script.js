@@ -207,12 +207,6 @@ $(document).ready(function() {
         }
         const iframeDoc = iframe.contentDocument;
         const reportElement = iframeDoc.documentElement;
-        
-        // Check if report content exists
-        if (!reportElement.body.children.length || reportElement.body.innerText.trim() === '') {
-            alert('No report available to download');
-            return;
-        }
 
         const patientName = $('#patient-name').val().trim() || 'MedicalReport';
         const fileName = `${patientName.replace(/\s+/g, '_')}_Report.pdf`;
